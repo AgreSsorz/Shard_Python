@@ -38,5 +38,21 @@ print()
 # Перебрать список new_users и если найдутся похожие имена,
 # посоветовать пользователю выбрать другое имя.
 # Если имя доступно, вывести соответствующее сообщение.
-# Проследить за тем, чтобы был соблюдён регистр символов.
-# (для этого создаётся копия current_users) для проверки нижнего регистра.
+current_users = [
+'anton', 'veronika', 'ivan', 'george', 'helen', 'kristopher', 'john'
+]
+
+new_users = [
+'anton', 'veronika', 'ivan', 'george', 'helen', 'kristopher', 'john',
+'michaela', 'kristina'
+]
+
+# Проверяем наличие недоступных имён в обоих списках.
+for user in new_users:
+	if user in current_users:
+		print(f"{user.title()} already exist. Choose another name.")
+	# Проверяем наличие доступных имён в обоих списках.		
+	else:
+		print(f"{user.title()} is available.")
+		
+print()
