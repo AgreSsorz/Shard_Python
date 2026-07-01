@@ -59,4 +59,3 @@ print(my_foods)
 print("\nMy friend's favorite foods are:")
 print(friend_foods)
 print()
-

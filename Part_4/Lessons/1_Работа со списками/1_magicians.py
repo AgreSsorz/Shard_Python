@@ -37,8 +37,3 @@ for magician in magicians:
 	# для удобного чтения кода
 	print(f"I can't wait to see your next trick, {magician.title()}.\n")
 print()
-
-
-
-
-

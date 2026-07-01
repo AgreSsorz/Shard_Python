@@ -43,6 +43,3 @@ print()
 # Генератор кубов: для создания первых 10 кубов.
 cubes = [value ** 3 for value in range(1, 11)]
 print(cubes)
-
-
-
